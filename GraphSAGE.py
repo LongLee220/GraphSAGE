@@ -607,7 +607,7 @@ def apply_model(dataCenter, ds, graphSage, classification, unsupervised_loss, b_
 
 
 ## Main
-file_paths = {'cora_content':'/Users/longlee/Documents/Code/GNN/data/cora/cora.content','cora_cite':'/Users/longlee/Documents/Code/GNN/data/cora/cora.cites'}
+file_paths = {'cora_content':'data/cora/cora.content','cora_cite':'data/cora/cora.cites'}
 datacenter  = DataCenter(file_paths)
 datacenter.load_Dataset()
 feature_data = torch.FloatTensor(getattr(datacenter, 'cora'+'_feats'))
